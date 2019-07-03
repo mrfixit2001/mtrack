@@ -1,0 +1,75 @@
+xserver-xorg-input-mtrack (0.5.0) unstable; urgency=medium
+
+  * Add tap-to-drag lock timeout
+  * Make edge size configurable for each edge individually
+  * Add edge scrolling
+  * Fix movement truncation
+  * Fix crash during suspend/wake up
+  * Make movement speed resolution independent
+  * Lock smooth scroll to one axis at time
+  * Post button events before move events
+  * New emulated buttons implementation
+  * Reduce max recognized fingers/touch points from 32 to 16
+  * New fancy readme with anchors
+  * Fix warnings, improve logging
+  * New examples
+  * Helper script to parse output of xinput --list-props
+
+ -- Paweł Turkowski <p2rkw0@gmail.com>  Sun, 28 Jan 2018 20:02:28 +0100
+
+xserver-xorg-input-mtrack (0.4.1) unstable; urgency=low
+
+  * Smooth scroll: detect and handle flipped up&down, left&right buttons
+  * Add examples with my current configuration as first example.
+  * Proper initialization of scroll axes(2 and 3).
+  * Setup scroll valuators also during device initialization.
+  * Do not consider edge clicks when calculating emulated buttons
+  * Change type of variables holding movement delta to double for better precision.
+  * Rewrite tap implementation from scratch. Remove 'status' field from Touch structure.
+  * Clear the MT_BUTTON bit of touches when an integrated button is released.
+  * Scale gesture reimplementation.
+
+ -- Paweł Turkowski <p2rkw0@gmail.com>  Wed, 02 Nov 2016 00:13:04 +0100
+
+xserver-xorg-input-mtrack (0.4.0) unstable; urgency=low
+
+  * Add smooth scroll
+  * Add scroll/swipe/swipe4 to drag functionality
+  * Add scroll coasting
+  * Add scroll/swipe/swipe4 click time
+  * Add Hold And Move gesture
+  * Replace EdgeSize with BottomEdge property
+  * Replace busy waiting with timers
+  * Fix button down -> up delays
+  * Initial support for absolute mode devices
+  * Improve support for pressure based devices
+  * Many minor improvements/bugfixes
+
+ -- Paweł Turkowski <p2rkw0@gmail.com>  Mon, 28 Sep 2015 01:20:38 +0200
+
+xserver-xorg-input-mtrack (0.2.0) unstable; urgency=low
+
+  * Now built via autoconf/automake.
+  * Fully configurable via XInput.
+  * Sensitivify now configurable.
+  * Trackpad can now be disabled on keystroke via an external daemon.
+  * Four finger tapping/swiping added.
+  * Button zones added, a new button emulation method.
+  * Tap-to-drag fixed.
+  * Three finger tapping responsiveness fixed.
+
+ -- Ryan Bourgeois <bluedragonx@gmail.com>  Thu, 26 May 2011 09:44:43 -0500
+
+xserver-xorg-input-mtrack (0.1.1) unstable; urgency=low
+
+  * Bugfix release.
+  * Disabling tapping no longer (wrongly) disables pointer movement.
+  * Button emulation set to ignore "old" touches. What consitutes an old touch can be adjusted with the ButtonTouchExpire option.
+
+ -- Ryan Bourgeois <bluedragonx@gmail.com>  Thu, 28 Apr 2011 01:14:58 -0500
+
+xserver-xorg-input-mtrack (0.1.0) unstable; urgency=low
+
+  * Initial release.
+
+ -- Ryan Bourgeois <bluedragonx@gmail.com>  Fri, 15 Apr 2011 14:46:10 -0500

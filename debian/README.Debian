@@ -1,0 +1,5 @@
+Xorg Multitouch Trackpad Driver
+* Install the Debian package
+* Configure xorg.conf
+* Restart X
+

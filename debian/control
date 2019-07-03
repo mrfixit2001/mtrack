@@ -1,0 +1,17 @@
+Source: xserver-xorg-input-mtrack
+Section: misc
+Priority: optional
+Maintainer: Paweł Turkowski <p2rkw0@gmail.com>
+Build-Depends:
+	debhelper (>= 5),
+	xserver-xorg-dev (>= 2:1.7.6),
+	libmtdev-dev (>= 1.0.10)
+Standards-Version: 3.7.2
+Homepage: https://github.com/p2rkw/xf86-input-mtrack
+
+Package: xserver-xorg-input-mtrack
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libmtdev1 (>= 1.0)
+Description: Xorg Multitouch Trackpad Driver
+ This X input driver provides gestures support for multitouch touchpads,
+ with or without an integrated button.
